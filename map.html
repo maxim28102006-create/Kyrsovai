@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluère</title>
+  <link rel="icon" href="aroma.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(180deg, #fff 0%, #f6f3ef 100%);
+      color: #3c3c3c;
+      font-family: 'Playfair Display', serif;
+      display: flex;
+      flex-direction: column;/*элементы идут сверху вниз*/
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;/*расстояние между текстом и рамкой*/
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', cursive;
+      font-size: 3.5rem;
+      color: #b4975a;
+      margin-bottom: 10px;
+    }
+    
+    
+    p.subtitle {
+      font-size: 1.1rem;/*размер шрифта*/
+      color: #6d6d6d;
+      letter-spacing: 1px;/*текст болле воздушный*/
+    }
+
+    .map-container {
+      position: relative;/*Позиционируется относительно своего обычного места*/
+      width: 100%;
+      max-width: 1000px;
+      height: 700px;
+      border-radius: 20px;
+      overflow: hidden;/*все что выходит за границы вырезается*/
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      border: 1px solid #ddd;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      margin-top: 40px;/*отступ сверху элемента*/
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    footer a {
+      color: #b4975a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fluère</h1>
+    <p class="subtitle">Карта наших бутиков и магазинов</p>
+  </header>
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8979.928546693112!2d37.61342117636566!3d55.75881251555346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSaint%20Laurent!5e0!3m2!1sru!2sru!4v1759754516835!5m2!1sru!2sru"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <footer>
+    © 2025 <a href="#">Fluère</a> · Искусство аромата и стиля
+  </footer>
+</body>
+</html>
